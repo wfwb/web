@@ -79,7 +79,7 @@
 							</form>
 						</ul>
 					</li>
-					<!-- <li class="dropdown pull-right">
+					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-shopping-cart icon-white"></i>&nbsp&nbspตะกร้า</a>
 						<ul class="dropdown-menu" style="width: 200px; padding-left: 15px; padding-right: 15px; padding-top: 15px">
 							<li><h5>คุณมีหนังสือในตะกร้า : 0 เล่ม</h5></li>
@@ -88,7 +88,7 @@
 								<button type="button" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">ดูหนังสือในตะกร้า</button>
 							</form>
 						</ul>
-					</li> -->
+					</li>
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
 						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
