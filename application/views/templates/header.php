@@ -151,7 +151,7 @@
 				<!-- PHONE -->
 				<ul class="visible-phone">
 					<li id="brand-text" style="float: left"><a href="">คำต่อคำ</a></li>
-					<li class="menu-toggle"><a href="#" style="margin-left: 15px;"><i class="icon-th-list icon-white" style="margin-top: 5px;"></i>&nbsp&nbspเมนู</a></li>
+					<li class="menu-toggle"><a href="#" style="margin-left: 15px;"><i class="icon-th-list icon-white" style="margin-top: 3px;"></i>&nbsp&nbspเมนู</a></li>
 					<ul class="menu-vertical">
 						<li><a id="home-li" href="">แรกพบ</a></li>
 						<li><a id="books-li" href="">ชวนอ่านหนังสือ</a></li>
