@@ -1,0 +1,92 @@
+	
+	body {
+		/*background-image: url(../img/wood-bg.jpg);*/
+	}
+
+	#page {
+		width: 1100px;
+		margin-top: 130px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 130px;
+	}
+
+	#head {
+
+	}
+
+	#forgot-password:hover {
+		text-decoration: none;
+	}
+
+	#brand-text > a {
+		color: #FFFFFF;
+		font-size: 26px;
+		text-decoration: none;
+	}
+
+	#brand-text > a:hover {
+		color: #F2CD33;
+		text-shadow: 0 0 5px #F2CD33;
+		text-decoration: none;
+	}
+
+	.navbar-custom {
+		background: #231F20;
+		height: 70px;
+		border-radius: 10px;
+		border-bottom: solid 7px #F2CD33;
+	}
+
+	.navbar-custom ul {
+		list-style:none;
+	}
+
+	.navbar-custom > ul > li {
+		float: right;
+		padding:25px 30px 0 0;
+		margin:0;
+	}
+
+	.navbar-custom > ul> li > a {
+		font-size: 16px;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.navbar-custom > ul> li > a:hover {
+		color: #F2CD33;
+		text-decoration: none;
+	}
+
+	.logo {
+		width: 157px;
+		height: 181px;
+		position: absolute;
+		margin-top: -80px;
+		z-index: 3;
+	}
+
+	.menu-vertical {
+		padding-top: 62px;
+	}
+
+	.menu-vertical > li {
+		padding:15px 0 15px 0;
+	}
+
+	.menu-vertical > li > a {
+		color: #FFFFFF;
+		margin-left: -8px;
+		font-size: 15px;
+		text-decoration: none;
+	}
+
+	.menu-vertical > li > a:hover {
+		color: #F2CD33;
+		text-decoration: none;
+	}
+
+	.menu-expand {
+		height: 430px;	
+	}
