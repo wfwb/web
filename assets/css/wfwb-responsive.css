@@ -5,13 +5,17 @@
 		width: 96%;
 	}
 
+	#wfwb-footer {
+		width: 96%;
+	}
+
 }
 
 @media (max-width: 1120px) {
 
 	#page {
 		margin-top: 100px;
-		margin-bottom: 100px;
+		/*margin-bottom: 100px;*/
 	}
 
 	.carousel-inner img {
@@ -33,8 +37,14 @@
 		margin-top: 10px;
 	}
 
-	#wfwb-carousel {
+	#wfwb-carousel-responsive {
 		margin-top: 0px;
+	}
+
+	#wfwb-footer {
+		width: 100%;
+		margin-top: -20px;
+		border-radius: 0px;
 	}
 
 	.carousel-inner img {
