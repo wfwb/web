@@ -82,7 +82,7 @@
 					</li>
 					<li><a id="contactus-li" href="<?php echo base_url()?>contact_us">ติดต่อเรา</a></li>
 					<li><a id="joinus-li" href="<?php echo base_url()?>join_us">ร่วมงานกับเรา</a></li>		
-					<li><a id="webboard-li" href="<?php echo base_url()?>webboard">พบปะพูดคุย</a></li>
+					<li><a id="webboard-li" href="http://forum.wordforwordbooks.com"  target="_blank">พบปะพูดคุย</a></li>
 					<li><a id="news-li" href="<?php echo base_url()?>news">แจ้งข่าว</a></li>
 					<li><a id="books-li" href="<?php echo base_url()?>books">ชวนอ่านหนังสือ</a></li>
 					<li><a id="home-li" href="<?php echo base_url()?>">แรกพบ</a></li>
@@ -130,7 +130,7 @@
 						<li><a id="home-li" href="<?php echo base_url()?>">แรกพบ</a></li>
 						<li><a id="books-li" href="<?php echo base_url()?>books">ชวนอ่านหนังสือ</a></li>
 						<li><a id="news-li" href="<?php echo base_url()?>news">แจ้งข่าว</a></li>
-						<li><a id="webboard-li" href="<?php echo base_url()?>webboard">พบปะพูดคุย</a></li>
+						<li><a id="webboard-li" href="http://forum.wordforwordbooks.com"  target="_blank">พบปะพูดคุย</a></li>
 						<li><a id="joinus-li" href="<?php echo base_url()?>join_us">ร่วมงานกับเรา</a></li>	
 						<li><a id="contactus-li" href="<?php echo base_url()?>contact_us">ติดต่อเรา</a></li>
 						<li class="dropdown pull-right">
