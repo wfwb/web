@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Books extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -22,13 +22,13 @@ class Home extends CI_Controller {
 		
 		if (!$this->ion_auth->logged_in()) {
 			$this->load->view('templates/header');
-			$this->load->view('home');
+			$this->load->view('books');
 			$this->load->view('templates/footer');
 		}
-
+		
 		else {
 			$this->load->view('templates/header_logged_in');
-			$this->load->view('home');
+			$this->load->view('books');
 			$this->load->view('templates/footer');
 		}
 
