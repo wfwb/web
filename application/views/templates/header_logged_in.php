@@ -47,24 +47,6 @@
 	<div id="page">
 		<div id="head">
 			<img class="logo hidden-phone" src="<?php echo base_url()?>assets/img/logo-color.png">
-			<!-- <div class="navbar navbar-inverse visible-desktop">
-				<div id="wfwbnav" class="navbar-inner">
-					<button id="expander" type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="nav-collapse">
-						<ul id="wfwbul" class="wfwbmenu nav pull-right">
-							<li><a id="home-li" href="">แรกพบ</a></li>
-							<li><a id="books-li" href="">ชวนอ่านหนังสือ</a></li>
-							<li><a id="news-li" href="">แจ้งข่าว</a></li>
-							<li><a id="webboard-li" href="">พบปะพูดคุย</a></li>
-							<li><a id="joinus-li" href="#">ร่วมงานกับเรา</a></li>	
-						</ul>	
-					</div>	
-				</div>
-			</div> -->
 			<div class="navbar-custom">
 
 				<!-- DESKTOP -->
@@ -90,16 +72,11 @@
 						</ul>
 					</li> -->
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">ข้อมูลส่วนตัว</a>
 						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
-							<li><h4>กรุณาเข้าสู่ระบบ</h3></li>
-							<?php echo form_open("auth/login");?>
-								<input name="identity" id="username" type="text" placeholder="อีเมลแอดเดรส"> 
-								<input name="password" id="password" type="password" placeholder="รหัสผ่าน"><br>
-								<input type="checkbox" name="remember" style="margin-top: -5px;"></input>
-								<a id="forgot-password" class="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
-								<button type="submit" id="btnLogin" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
-								<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
+							<li><h4>ข้อมูลส่วนตัว</h3></li>
+							<?php echo form_open("auth/logout");?>
+								<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">ออกจากระบบ</button>
 							<?php echo form_close();?>
 						</ul>
 					</li>
@@ -135,16 +112,12 @@
 						</ul>
 					</li> -->
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">ข้อมูลส่วนตัว</a>
 						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
-							<li><h4>กรุณาเข้าสู่ระบบ</h3></li>
-							<form class="form" id="formLogin"> 
-								<input name="username" id="username" type="text" placeholder="อีเมลแอดเดรส"> 
-								<input name="password" id="password" type="password" placeholder="รหัสผ่าน"><br>
-								<a id="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
-								<button type="button" id="btnLogin" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
-								<button type="button" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
-							</form>
+							<li><h4>ข้อมูลส่วนตัว</h3></li>
+							<?php echo form_open("auth/logout");?>
+								<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">ออกจากระบบ</button>
+							<?php echo form_close();?>
 						</ul>
 					</li>	
 				</ul>
@@ -160,19 +133,15 @@
 						<li><a id="webboard-li" href="<?php echo base_url()?>webboard">พบปะพูดคุย</a></li>
 						<li><a id="joinus-li" href="<?php echo base_url()?>join_us">ร่วมงานกับเรา</a></li>	
 						<li><a id="contactus-li" href="<?php echo base_url()?>contact_us">ติดต่อเรา</a></li>
-						<li class="dropdown" style="float: left">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
-							<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
-								<li><h4>กรุณาเข้าสู่ระบบ</h3></li>
-								<form class="form" id="formLogin"> 
-									<input name="username" id="username" type="text" placeholder="อีเมลแอดเดรส"> 
-									<input name="password" id="password" type="password" placeholder="รหัสผ่าน"><br>
-									<a id="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
-									<button type="button" id="btnLogin" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
-									<button type="button" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
-								</form>
-							</ul>
-						</li>
+						<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">ข้อมูลส่วนตัว</a>
+						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
+							<li><h4>ข้อมูลส่วนตัว</h3></li>
+							<?php echo form_open("auth/logout");?>
+								<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">ออกจากระบบ</button>
+							<?php echo form_close();?>
+						</ul>
+					</li>
 						<li class="dropdown" style="float: left; margin-top: 50px; margin-left: -55px;">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search icon-white"></i>&nbsp&nbspค้นหา</a>
 							<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
