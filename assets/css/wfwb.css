@@ -1,6 +1,6 @@
 	
 	body {
-		/*background-image: url(../img/wood-bg.jpg);*/
+		background-image: url(../img/wood-bg.jpg);
 	}
 
 	#page {
@@ -14,6 +14,8 @@
 	#head {
 
 	}
+
+	/* MENU NAVBAR */
 
 	#forgot-password:hover {
 		text-decoration: none;
@@ -29,38 +31,6 @@
 		color: #F2CD33;
 		text-shadow: 0 0 5px #F2CD33;
 		text-decoration: none;
-	}
-
-	#wfwb-carousel {
-		margin-top: 35px;
-	}
-
-	#wfwb-carousel-responsive {
-		margin-top: 35px;
-	}
-
-	#indicators-middle {
-		position: absolute;
-		float: none;
-		left: 0;
-		top: auto;
-		bottom: 15px;
-		text-align: center;
-	}
-
-	#wfwb-footer {
-		width: 1100px;
-		margin-top: -5px;
-		height: 200px;
-		margin-left: auto;
-		margin-right: auto;
-		background-color: #231F20;
-		border-radius: 10px;
-		border-top: solid 7px #F2CD33;	
-	}
-
-	.carousel-inner img {
-		border-radius: 10px;
 	}
 
 	.navbar-custom {
@@ -121,4 +91,114 @@
 
 	.menu-expand {
 		height: 480px;	
+	}
+
+	/* CAROUSEL */
+
+	#wfwb-carousel {
+		margin-top: 50px;
+	}
+
+	#wfwb-carousel-responsive {
+		margin-top: 35px;
+	}
+
+	.carousel-indicators.middle {
+		left: 0;
+		right: 0;
+		top: auto;
+		bottom: 15px;
+		text-align: center;
+	}
+
+	.carousel-indicators.middle li {
+		float: none;
+		display: inline-block;
+	}
+
+	.carousel-inner img {
+		border-radius: 10px;
+	}
+
+	#contact-us-section {
+		border-radius: 10px;
+		border: solid 7px #F2CD33;
+		margin-top: 50px;
+	}
+
+	/* SECTION */
+
+	.section {
+		height: auto;
+		background: rgba(256, 256, 256, 0.95);
+	}
+
+	.section-inner {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-left: 80px;
+		padding-right: 80px;
+		text-align: left;	
+	}
+
+	.section-inner p {
+		font-size: 16px;
+		line-height: 22px;
+		text-align: justify;
+		padding-bottom: 10px;
+	}
+
+	/* FOOTER */
+
+	#wfwb-footer {
+		width: 1100px;
+		margin-top: -5px;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #231F20;
+		border-radius: 10px;
+		border-top: solid 7px #F2CD33;	
+	}
+
+	.footer {
+		height: 280px;
+		color: #FFFFFF;
+		width: 1100px;
+		margin-top: 35px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+		background: #231F20;
+		border-radius: 10px;
+		border-top: solid 7px #F2CD33;
+	}
+
+	.footer p {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.subscribe {
+		position: relative;
+		float: right;
+		margin-top: 60px;
+		margin-right: 120px;
+	}
+
+	.contact-us {
+		position: relative;
+		float: left;
+		margin-top: 40px;
+		margin-left: 60px;
+		margin-bottom: 30px;
+	}
+
+	.fb-logo {
+		position: relative;
+		display: block;
+		margin-top: 20px; 
+		cursor: pointer; 
+		margin-left: auto;
+		margin-right: auto;
 	}

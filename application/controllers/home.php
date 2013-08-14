@@ -33,6 +33,22 @@ class Home extends CI_Controller {
 		}
 
 	}
+
+	public function register() {
+
+		$this->load->view('templates/header');
+		$this->load->view('register');
+		$this->load->view('templates/footer');
+
+	}
+
+	public function profile() {
+
+		$this->load->view('templates/header_logged_in');
+		$this->load->view('profile');
+		$this->load->view('templates/footer');	
+
+	}
 }
 
 /* End of file welcome.php */

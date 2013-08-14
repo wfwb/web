@@ -22,15 +22,14 @@ class Join_Us extends CI_Controller {
 		
 		if (!$this->ion_auth->logged_in()) {
 			$this->load->view('templates/header');
-			$this->load->view('books');
-			$this->load->view('templates/footer');
 		}
 		
 		else {
 			$this->load->view('templates/header_logged_in');
-			$this->load->view('books');
-			$this->load->view('templates/footer');
 		}
+
+		$this->load->view('join_us');
+		$this->load->view('templates/footer');
 
 	}
 }

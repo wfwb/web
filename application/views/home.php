@@ -1,5 +1,14 @@
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('.carousel').carousel('cycle');
+		});
+
+	</script>
+
 	<div id="wfwb-carousel" class="carousel slide visible-desktop">
-		<ol id="indicators-middle" class="carousel-indicators">
+		<ol class="carousel-indicators middle">
 			<li data-target="#wfwb-carousel" data-slide-to="0" class="active"></li>
 			<li data-target="#wfwb-carousel" data-slide-to="1"></li>
 		</ol>	
@@ -18,7 +27,7 @@
 	</div>
 
 	<div id="wfwb-carousel-responsive" class="carousel slide hidden-desktop">
-		<ol id="indicators-middle" class="carousel-indicators">
+		<ol class="carousel-indicators middle">
 			<li data-target="#wfwb-carousel-responsive" data-slide-to="0" class="active"></li>
 			<li data-target="#wfwb-carousel-responsive" data-slide-to="1"></li>
 		</ol>

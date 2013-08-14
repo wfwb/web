@@ -8,8 +8,8 @@
 
 	<title>สำนักพิมพ์คำต่อคำ</title>
 
-	<link rel="stylesheet" type="text/css" href="<?php base_url()?>assets/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url()?>assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/bootstrap-responsive.css">
 	<meta name="viewport" content="width=deivce-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/wfwb.css">
@@ -18,7 +18,7 @@
 
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/bootstrap.js"></script>
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/drowdown.js"></script>
+	<!-- <script type="text/javascript" src="<?php echo base_url()?>assets/js/dropdown.js"></script> -->
 
 	<script type="text/javascript">
 		
@@ -94,12 +94,18 @@
 						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
 							<li><h4>กรุณาเข้าสู่ระบบ</h3></li>
 							<?php echo form_open("auth/login");?>
-								<input name="identity" id="username" type="text" placeholder="อีเมลแอดเดรส"> 
+								<input name="identity" id="username" type="text" placeholder="อีเมล"> 
 								<input name="password" id="password" type="password" placeholder="รหัสผ่าน"><br>
 								<input type="checkbox" name="remember" style="margin-top: -5px;"></input>
 								<a id="forgot-password" class="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
-								<button type="submit" id="btnLogin" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
-								<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
+								<button type="submit" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
+							<?php echo form_close();?>
+							<?php 
+								$attributes = array('style' => 'margin-top: -55px; margin-left: 90px;',
+													'action' => '<?php echo base_url()?>register');
+								echo form_open("home/register", $attributes);
+							?>
+								<button type="submit" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
 							<?php echo form_close();?>
 						</ul>
 					</li>
@@ -138,13 +144,19 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
 						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
 							<li><h4>กรุณาเข้าสู่ระบบ</h3></li>
-							<form class="form" id="formLogin"> 
-								<input name="username" id="username" type="text" placeholder="อีเมลแอดเดรส"> 
+							<?php echo form_open("auth/login");?>
+								<input name="identity" id="username" type="text" placeholder="อีเมลแอด"> 
 								<input name="password" id="password" type="password" placeholder="รหัสผ่าน"><br>
-								<a id="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
-								<button type="button" id="btnLogin" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
-								<button type="button" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
-							</form>
+								<input type="checkbox" name="remember" style="margin-top: -5px;"></input>
+								<a id="forgot-password" class="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
+								<button type="submit" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
+							<?php echo form_close();?>
+							<?php 
+								$attributes = array('style' => 'margin-top: -55px; margin-left: 90px;');
+								echo form_open("home/register", $attributes);
+							?>
+								<button type="submit" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
+							<?php echo form_close();?>
 						</ul>
 					</li>	
 				</ul>
@@ -164,17 +176,23 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">เข้าสู่ระบบ</a>
 							<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
 								<li><h4>กรุณาเข้าสู่ระบบ</h3></li>
-								<form class="form" id="formLogin"> 
-									<input name="username" id="username" type="text" placeholder="อีเมลแอดเดรส"> 
+								<?php echo form_open("auth/login");?>
+									<input name="identity" id="username" type="text" placeholder="อีเมลแอด"> 
 									<input name="password" id="password" type="password" placeholder="รหัสผ่าน"><br>
-									<a id="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
-									<button type="button" id="btnLogin" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
-									<button type="button" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
-								</form>
+									<input type="checkbox" name="remember" style="margin-top: -5px;"></input>
+									<a id="forgot-password" class="forgot-password" href="#">&nbspลืมรหัสผ่าน</a><br>
+									<button type="submit" class="btn btn-inverse" style="margin-top:5px;">เข้าสู่ระบบ</button>
+								<?php echo form_close();?>
+								<?php 
+									$attributes = array('style' => 'margin-top: -55px; margin-left: 90px;');
+									echo form_open("home/register", $attributes);
+								?>
+									<button type="submit" class="btn btn-warning" style="margin-top:5px;">สมัครสมาชิก</button>
+								<?php echo form_close();?>
 							</ul>
 						</li>
 						<li class="dropdown" style="float: left; margin-top: 50px; margin-left: -55px;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search icon-white"></i>&nbsp&nbspค้นหา</a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search icon-white"></i>&nbsp;&nbsp;ค้นหา</a>
 							<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
 								<li><h4>ค้นหาหนังสือหรือนักเขียน</h3></li>
 								<form class="form" id="formLogin"> 

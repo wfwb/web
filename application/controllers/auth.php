@@ -6,11 +6,11 @@ class Auth extends CI_Controller {
 		parent::__construct();
 	}
 
-	function index() {
+	public function index() {
 		redirect('/');
 	}
 
-	function login() {
+	public function login() {
 
         $this->form_validation->set_rules('identity', 'Identity', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
@@ -57,9 +57,51 @@ class Auth extends CI_Controller {
         }
     }
 
-	function logout() {
+    public function admin_login() {
+
+        $this->form_validation->set_rules('identity', 'Identity', 'required');
+        $this->form_validation->set_rules('password', 'Password', 'required');
+
+        if ($this->form_validation->run() == true) {
+
+            if ($this->ion_auth->login($this->input->post('identity'), $this->input->post('password'))) {
+                //if the login is successful
+                //redirect them back to the home page
+                if ($this->ion_auth->is_admin()) {
+                    $this->session->set_flashdata('message', $this->ion_auth->messages());
+                    redirect('admin_home_page', 'refresh');
+                }
+                else {
+                    $this->ion_auth->logout();
+                    $this->session->set_flashdata('message', $this->ion_auth->messages());
+                    redirect('admin', 'refresh');
+                }
+            }
+            else {
+                //if the login was un-successful
+                //redirect them back to the login page
+                $this->session->set_flashdata('message', $this->ion_auth->errors());
+                redirect('admin', 'refresh'); //use redirects instead of loading views for compatibility with MY_Controller libraries
+            }
+        }
+        else {
+            redirect('admin', 'refresh');
+        }
+
+    }
+
+	public function logout() {
+
 		$this->ion_auth->logout();
+        $this->session->set_flashdata('message', $this->ion_auth->messages());
 		redirect('/', 'refresh');
+
 	}
+
+    public function admin_logout() {
+        $this->ion_auth->logout();
+        $this->session->set_flashdata('message', $this->ion_auth->messages());
+        redirect('admin', 'refresh');
+    }
 
 }
