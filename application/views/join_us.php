@@ -1,18 +1,30 @@
 	
+	<script type="text/javascript">
+
+	</script>
+
 	<div class="section" style="background: #FFFFFF; color: #231F20;">
 		<div class="section-thumbnail" style="margin-top: 50px;">
-			<div class="row-fluid" style="height: 240px;">
+
+		<?php foreach ($join_us as $thumbnail) { ?>
+			<div id="thumbnail"class="row-fluid" style="height: 240px;">
 				<div class="span12">
 					<div class="row-fluid">
 						<div class="span4">
-							test
+							<!-- <img src="<?php echo base_url()?>assets/img/thumbnail-ex.jpg" style="margin: 20px;"> -->
 						</div>
-						<div class="span8">
-							test
+						<div class="span8" style="height: 240px;">
+							<h3 style=""><?php echo $thumbnail['heading']; ?></h3>
+							<p style="">	
+								<?php echo $thumbnail['detail']; ?>
+							</p>
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal" style="float: right; margin-right: 20px; margin-top: 10px;">อ่านต่อ</a>
 						</div>	
 					</div>
 				</div>
-			</div>
+			</div>	
+		<?php } ?>
+
 		</div>
 		<!-- <div class="section-inner">
 			<h2>หลักเกณฑ์การรับต้นฉบับของสำนักพิมพ์คำต่อคำ</h2>
