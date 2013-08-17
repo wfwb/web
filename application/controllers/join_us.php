@@ -34,7 +34,7 @@ class Join_Us extends CI_Controller {
 			$this->load->view('templates/header_logged_in');
 		}
 
-		$data['join_us'] = $this->db_query->join_us_query();
+		$data['join_us'] = $this->db_query->get_join_us_db();
 
 		$this->load->view('join_us', $data);
 		$this->load->view('templates/footer');
