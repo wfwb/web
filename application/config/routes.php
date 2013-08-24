@@ -46,5 +46,13 @@ $route['news'] = "news";
 $route['join_us'] = "join_us";
 $route['contact_us'] = "contact_us";
 
+/* ADMIN */
+$route['admin'] = "admin";
+$route['admin_home_page'] = "admin/home_page";
+$route['admin_books_page'] = "admin/books_page";
+$route['admin_news_page'] = "admin/news_page";
+$route['admin_join_us_page'] = "admin/join_us_page";
+$route['admin_logout'] = "auth/admin_logout";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
