@@ -8,8 +8,8 @@
 
 	<title>สำนักพิมพ์คำต่อคำ</title>
 
-	<link rel="stylesheet" type="text/css" href="<?php base_url()?>assets/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<?php base_url()?>assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/bootstrap-responsive.css">
 	<meta name="viewport" content="width=deivce-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/wfwb.css">
@@ -18,7 +18,8 @@
 
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/bootstrap.js"></script>
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/drowdown.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/wfwb.js"></script>
+	<!-- <script type="text/javascript" src="<?php echo base_url()?>assets/js/dropdown.js"></script> -->
 
 	<script type="text/javascript">
 		
@@ -92,7 +93,7 @@
 				<!-- TABLET -->
 				<ul class="visible-tablet">
 					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search icon-white"></i>&nbsp&nbspค้นหา</a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search icon-white"></i>&nbsp;&nbsp;ค้นหา</a>
 						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
 							<li><h4>ค้นหาหนังสือหรือนักเขียน</h3></li>
 							<form class="form" id="formLogin"> 
@@ -133,17 +134,17 @@
 						<li><a id="webboard-li" href="http://forum.wordforwordbooks.com"  target="_blank">พบปะพูดคุย</a></li>
 						<li><a id="joinus-li" href="<?php echo base_url()?>join_us">ร่วมงานกับเรา</a></li>	
 						<li><a id="contactus-li" href="<?php echo base_url()?>contact_us">ติดต่อเรา</a></li>
-						<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">ข้อมูลส่วนตัว</a>
-						<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
-							<li><h4>ข้อมูลส่วนตัว</h3></li>
-							<?php echo form_open("auth/logout");?>
-								<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">ออกจากระบบ</button>
-							<?php echo form_close();?>
-						</ul>
-					</li>
-						<li class="dropdown" style="float: left; margin-top: 50px; margin-left: -55px;">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search icon-white"></i>&nbsp&nbspค้นหา</a>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">ข้อมูลส่วนตัว</a>
+							<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
+								<li><h4>ข้อมูลส่วนตัว</h3></li>
+								<?php echo form_open("auth/logout");?>
+									<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">ออกจากระบบ</button>
+								<?php echo form_close();?>
+							</ul>
+						</li>
+						<li class="dropdown" style="float: left;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-search icon-white"></i>&nbsp;&nbsp;ค้นหา</a>
 							<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
 								<li><h4>ค้นหาหนังสือหรือนักเขียน</h3></li>
 								<form class="form" id="formLogin"> 

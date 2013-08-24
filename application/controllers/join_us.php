@@ -18,19 +18,26 @@ class Join_Us extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('db_query');
+	}
+
 	public function index() {
 		
 		if (!$this->ion_auth->logged_in()) {
 			$this->load->view('templates/header');
-			$this->load->view('books');
-			$this->load->view('templates/footer');
 		}
 		
 		else {
 			$this->load->view('templates/header_logged_in');
-			$this->load->view('books');
-			$this->load->view('templates/footer');
 		}
+
+		$data['join_us'] = $this->db_query->get_join_us_db();
+
+		$this->load->view('join_us', $data);
+		$this->load->view('templates/footer');
 
 	}
 }
