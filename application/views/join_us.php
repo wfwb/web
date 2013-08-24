@@ -11,7 +11,7 @@
 				<div class="span12">
 					<div class="row-fluid">
 						<div class="span4">
-							<!-- <img src="<?php echo base_url()?>assets/img/thumbnail-ex.jpg" style="margin: 20px;"> -->
+							<img src="<?php echo base_url()?><?php echo $thumbnail['img_address'];?>" style="margin: 20px;">
 						</div>
 						<div class="span8" style="height: 240px;">
 							<h3 style=""><?php echo $thumbnail['heading']; ?></h3>
