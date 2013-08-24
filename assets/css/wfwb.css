@@ -148,6 +148,41 @@
 		padding-bottom: 10px;
 	}
 
+	/* THUMBNAIL */
+	.custom-thumbnail {
+		position: relative;
+		max-width: inherit;
+	}
+
+	.custom-thumbnail button {
+		position: absolute;
+		float: right;
+		right: 25px;
+		bottom: 25px;
+	}
+
+	.thumbnail-img {
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		display: inline-block;
+	}
+
+	.thumbnail-detail {
+		margin-top: 25px;
+		margin-left: 10px;
+		margin-right: 35px;
+		margin-bottom: 25px;
+		display: inline-block;
+		position: absolute;
+		text-align: justify;
+	}
+
+	.thumbnail-detail p {
+		height: 150px;
+	}
+
 	/* FOOTER */
 
 	#wfwb-footer {

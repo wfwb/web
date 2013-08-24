@@ -18,6 +18,7 @@
 
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>assets/js/wfwb.js"></script>
 	<!-- <script type="text/javascript" src="<?php echo base_url()?>assets/js/dropdown.js"></script> -->
 
 	<script type="text/javascript">
@@ -33,6 +34,12 @@
 					$('.menu-vertical').show();
 				}
 			});
+
+			// for (var i = 1; i <= 2; i++) {
+			// 	var detail = $('#detail' + i).text();
+			// 	$('#detail' + i).text($('#detail' + i).text().substr(0, 1000)).append(' ...');
+			// 	detail = "";
+			// };
 
 			$('.menu-vertical').hide();
 
