@@ -28,14 +28,6 @@
 
 }
 
-@media (max-width: 955px) {
-
-	.thumbnail-detail p {
-		height: 110px;
-	}
-
-}
-
 @media (max-width: 767px) {
 
 	body {

@@ -18,7 +18,6 @@
 
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/bootstrap.js"></script>
-	<script type="text/javascript" src="<?php echo base_url()?>assets/js/wfwb.js"></script>
 	<!-- <script type="text/javascript" src="<?php echo base_url()?>assets/js/dropdown.js"></script> -->
 
 	<script type="text/javascript">
@@ -35,12 +34,6 @@
 				}
 			});
 
-			// for (var i = 1; i <= 2; i++) {
-			// 	var detail = $('#detail' + i).text();
-			// 	$('#detail' + i).text($('#detail' + i).text().substr(0, 1000)).append(' ...');
-			// 	detail = "";
-			// };
-
 			$('.menu-vertical').hide();
 
 		});
@@ -53,7 +46,7 @@
 
 	<div id="page">
 		<div id="head">
-			<img class="logo hidden-phone" src="<?php echo base_url()?>assets/img/logo-color.png">
+			<img class="logo hidden-phone" src="<?php echo base_url()?>assets/img/logo-shadow.png">
 			<!-- <div class="navbar navbar-inverse visible-desktop">
 				<div id="wfwbnav" class="navbar-inner">
 					<button id="expander" type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
