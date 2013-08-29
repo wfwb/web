@@ -21,9 +21,9 @@ $config['use_mongodb'] = FALSE;
 | $ mongorestore sql/mongo
 |
 */
-$config['collections']['users']          = 'users';
-$config['collections']['groups']         = 'groups';
-$config['collections']['login_attempts'] = 'login_attempts';
+// $config['collections']['users']          = 'users';
+// $config['collections']['groups']         = 'groups';
+// $config['collections']['login_attempts'] = 'login_attempts';
 
 /*
 | -------------------------------------------------------------------------

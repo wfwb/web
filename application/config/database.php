@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'zp8202_book';
+$db['default']['username'] = 'prisa1987';
 $db['default']['password'] = 'xibKk1987';
-$db['default']['database'] = 'zp8202_book';
+$db['default']['database'] = 'ion';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

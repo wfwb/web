@@ -1,0 +1,59 @@
+
+ #info{
+ 	min-height: 550px;
+ }
+
+	.row p{
+	display: block;
+	float: left;
+	margin-bottom: 0px;
+	margin-top: 15px;
+	
+	opacity: 0.9;
+	/*text-shadow: 0px 1px 0px rgb(34, 45, 123);*/	
+	}
+
+
+	input{
+		width: 200px;
+		height: 50px;
+
+	}
+	label{
+		display: inline;
+		color: #f5cd4f;
+		font-size: 30px;
+
+	}
+
+	#regis{
+	
+		line-height: 40px;
+		 /*font-family: Oswald,Arial,Helvetica,sans-serif !important;*/
+		font-size: 80px;
+		color: #D9364A;
+		font-style: bold;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		
+		text-align: center;
+		
+		 /*text-shadow: 0px 1px 0px rgb(34, 45, 123);*/
+	}
+
+
+
+	
+
+#submit{
+	margin-top:  50px;
+
+	margin-left: 450px;
+	width: 100px;
+}
+
+#reset{
+	margin-top:  50px;
+	margin-left: 20px;
+	width: 100px;
+}
