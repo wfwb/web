@@ -22,6 +22,7 @@ class Join_Us extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('db_query');
+		$this->load->model('join_us');
 	}
 
 	public function index() {
@@ -40,6 +41,7 @@ class Join_Us extends CI_Controller {
 		$this->load->view('templates/footer');
 
 	}
+
 }
 
 /* End of file welcome.php */

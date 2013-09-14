@@ -132,6 +132,10 @@
 		margin-top: 50px;
 	}
 
+	.section-inner .container > form > ul > li {
+		list-style-type: none !important;
+	}
+
 	.section {
 		height: auto;
 		background: rgba(256, 256, 256, 0.95);
@@ -142,7 +146,7 @@
 		padding-bottom: 40px;
 		padding-left: 80px;
 		padding-right: 80px;
-		text-align: left;	
+		text-align: left;
 	}
 
 	.section-inner p {
@@ -239,4 +243,46 @@
 		cursor: pointer; 
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	#books-container {
+		margin-top: 50px;
+		background-color: white;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	/* */
+	.related {
+
+	}
+
+	.related-item {
+		display: inline;
+	}
+
+	.related-list {
+		text-align: center;		
+	}
+
+	.related-list > li {
+		display: inline-block;
+	}
+
+	.related-list > li > div {
+		/*height: 150px;*/
+		/*width: 150px;*/
+		background-color: red;
+	}
+
+	.hero-unit > ul > li {
+		list-style: none;
+	}
+
+	.hero-list {
+		
+	}
+
+	.hero-div {
+		/*height: 250px;	*/
 	}
