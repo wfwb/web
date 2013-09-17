@@ -3,29 +3,73 @@
 
 		$(document).ready(function() {
 
-			var $first = 0;
-			var $last = 4;
-			$('.related-list > li:gt('+($last-1)+')').hide();
-			$('.related-list > li:lt('+($first+1)+')').hide();
-			$('.prev-button').click(function() {
-				if ($first > 0) {
-					$first--;
-					$last--;
-					$('.related-list > li:gt('+($last-1)+')').hide();
-					$('.related-list > li:lt('+$last+')').show();
-					$('.related-list > li:lt('+($first+1)+')').hide();
+			var $r_first = 0;
+			var $r_last = 4;
+			$('#recommended-list > li:gt('+($r_last-1)+')').hide();
+			$('#recommended-list > li:lt('+($r_first+1)+')').hide();
+			$('#recommended-prev').click(function() {
+				if ($r_first > 0) {
+					$r_first--;
+					$r_last--;
+					$('#recommended-list > li:gt('+($r_last-1)+')').hide();
+					$('#recommended-list > li:lt('+$r_last+')').show();
+					$('#recommended-list > li:lt('+($r_first+1)+')').hide();
 				}
 			});
-			$('.next-button').click(function() {
-				if ($last < 11) {
-					$first++;
-					$last++;
-					$('.related-list > li:lt('+$last+')').show();
-					$('.related-list > li:lt('+($first+1)+')').hide();
+			$('#recommended-next').click(function() {
+				if ($r_last < 4) {
+					$r_first++;
+					$r_last++;
+					$('#recommended-list > li:lt('+$r_last+')').show();
+					$('#recommended-list > li:lt('+($r_first+1)+')').hide();
 				}
 			});
 
-			var $random = Math.floor((Math.random()*10)+1);
+			var $new_first = 0;
+			var $new_last = 4;
+			$('#new-list > li:gt('+($new_last-1)+')').hide();
+			$('#new-list > li:lt('+($new_first+1)+')').hide();
+			$('#new-prev').click(function() {
+				if ($r_first > 0) {
+					$r_first--;
+					$r_last--;
+					$('#new-list > li:gt('+($new_last-1)+')').hide();
+					$('#new-list > li:lt('+$new_last+')').show();
+					$('#new-list > li:lt('+($new_first+1)+')').hide();
+				}
+			});
+			$('#new-next').click(function() {
+				if ($new_last < 4) {
+					$new_first++;
+					$new_last++;
+					$('#new-list > li:lt('+$new_last+')').show();
+					$('#new-list > li:lt('+($new_first+1)+')').hide();
+				}
+			});
+
+			var $normal_first = 0;
+			var $normal_last = 4;
+			$('#normal-list > li:gt('+($normal_last-1)+')').hide();
+			$('#normal-list > li:lt('+($normal_first+1)+')').hide();
+			$('#normal-prev').click(function() {
+				if ($r_first > 0) {
+					$r_first--;
+					$r_last--;
+					$('#normal-list > li:gt('+($normal_last-1)+')').hide();
+					$('#normal-list > li:lt('+$normal_last+')').show();
+					$('#normal-list > li:lt('+($normal_first+1)+')').hide();
+				}
+			});
+			$('#normal-next').click(function() {
+				if ($normal_last < 4) {
+					$normal_first++;
+					$normal_last++;
+					$('#normal-list > li:lt('+$normal_last+')').show();
+					$('#normal-list > li:lt('+($normal_first+1)+')').hide();
+				}
+			});
+
+			var $random = Math.floor((Math.random()*3)+1);
 			$('.hero-list > li:gt('+$random+')').hide();
 			$('.hero-list > li:lt('+$random+')').hide();
 
@@ -41,106 +85,113 @@
 
 	<div id="books-container" class="container-fluid">
 		<div class="row-fluid">
-			<div class="span3">
-				<div class="well sidebar-nav">
+			<div class="span2">
+				<div class="sidebar-nav" style="margin-top: 20px;">
 					<ul class="nav nav-list">
-						<li class="nav-header">Sidebar</li>
-						<li class="active"><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li class="nav-header">Sidebar</li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li class="nav-header">Sidebar</li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
+						<li class="nav-header" style="font-size: 16px;">หมวดหมู่</li>
+						<li><a href="#">โรแมนติกแฟนตาซี</a></li>
+						<li><a href="#">โรแมนติกคอเมดี้</a></li>
+						<li><a href="#">ดราม่า</a></li>
+						<li class="nav-header" style="font-size: 16px;">นักเขียน</li>
+						<li><a href="#">ดวงตะวัน</a></li>
+						<li><a href="#">อรพิม</a></li>
+						<li><a href="#">อยุทธ์</a></li>
 					</ul>
-				</div><!--/.well -->
-			</div><!--/span-->
-			<div class="span9">
-				<div class="hero-unit">
-					<!-- <h1>Hello, world!</h1>
-					<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-					<p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p> -->
+				</div>
+			</div>
+			<div class="span10">
+				<div class="hero-unit" style="background-color: white;">
 					<ul class="hero-list">
-						<?php for ($i=0; $i <= 11 ; $i++) { ?> 
+						<li></li>
+						<?php foreach ($books as $book) { ?> 
 						<li>
 							<div class="hero-div">
-								<h1>Hello, world <?php echo $i; ?></h1>
-								<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-								<p><a href="#" class="btn btn-primary btn-large">Learn more »</a></p>		
+								<div class="row-fluid">
+									<div class="span3">
+										<img src="<?php echo base_url()?><?php echo $book['cover_img_front']; ?>" height="275" width="190">
+									</div>
+									<div class="span7" style="padding-left: 20px;">
+										<h1 style="margin-bottom: 13px; font-size: 50px;"><?php echo $book['book_name']; ?></h1>
+										<p><?php echo $book['book_name_decor']; ?></p>
+										<p>ผู้เขียน : <?php echo $book['author']; ?></p>
+										<p>ประเภท​ : <?php echo $book['category']; ?></p>
+										<p>ราคา : <?php echo $book['price']; ?> บาท</p>
+										<!-- <p>ISBN : <?php echo $book['ISBN']; ?></p> -->
+										<p><a href="#" class="btn btn-primary btn-medium">Learn more »</a></p>
+									</div>	
+								</div>
 							</div>	
 						</li>
 						<?php } ?>
+						<li></li>
 					</ul>
 				</div>
-				<div class="row-fluid">
-					<div class="span4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn" href="#">View details »</a></p>
-					</div><!--/span-->
-					<div class="span4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn" href="#">View details »</a></p>
-					</div><!--/span-->
-					<div class="span4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn" href="#">View details »</a></p>
-					</div><!--/span-->
-				</div><!--/row-->
-				<div class="row-fluid">
-					<div class="span4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn" href="#">View details »</a></p>
-					</div><!--/span-->
-					<div class="span4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn" href="#">View details »</a></p>
-					</div><!--/span-->
-					<div class="span4">
-						<h2>Heading</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-						<p><a class="btn" href="#">View details »</a></p>
-					</div><!--/span-->
-				</div><!--/row-->
+
+				<hr>
+				<div class="row-type">
+					<h4>หนังสือแนะนำ</h4>	
+				</div>
+				<div class="row">
+					<button id="recommended-prev" class="prev-button btn btn-inverse" style="float: left; left: 35px; top: 0px; position: relative;"><</button>
+					<ul id="recommended-list" class="related-list" style="margin-left: 80px; margin-top: 20px;">
+						<li></li>
+						<?php foreach ($recommended as $r) { ?>
+						<li class="span3" style="margin-left: 30px; margin-right: 30px; margin-bottom: 10px; line-height: 9px;">
+								<img src="<?php echo base_url(); ?><?php echo $r['cover_img_front'];?>" width="170" height="247">
+								<p style="margin-top: 10px;"><?php echo $r['book_name'];?></p>
+								<p>฿ <?php echo $r['price'];?></p>
+								<button class="btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
+						</li>
+						<?php } ?>
+						<li></li>
+					</ul>
+					<button id="recommended-next" class="next-button btn btn-warning" style="float: right; right: 10px; top: 0px; position: relative;">></button>
+				</div>
+				
+				<hr>
+				<div class="row-type">
+					<h4>หนังสือใหม่</h4>	
+				</div>
+				<div class="row">
+					<button id="new-prev" class="prev-button btn btn-inverse" style="float: left; left: 35px; top: 0px; position: relative;"><</button>
+					<ul id="new-list" class="related-list" style="margin-left: 80px; margin-top: 20px;">
+						<li></li>
+						<?php foreach ($new as $r) { ?>
+						<li class="span3" style="margin-left: 30px; margin-right: 30px; margin-bottom: 10px; line-height: 9px;">
+								<img src="<?php echo base_url(); ?><?php echo $r['cover_img_front'];?>" width="170" height="247">
+								<p style="margin-top: 10px;"><?php echo $r['book_name'];?></p>
+								<p>฿ <?php echo $r['price'];?></p>
+								<button class="btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
+						</li>
+						<?php } ?>
+						<li></li>
+					</ul>
+					<button id="new-next" class="next-button btn btn-warning" style="float: right; right: 10px; top: 0px; position: relative;">></button>
+				</div>
+
+				<hr>
+				<div class="row-type">
+					<h4>หนังสือทั้งหมด</h4>	
+				</div>
+				<div class="row">
+					<button id="new-prev" class="prev-button btn btn-inverse" style="float: left; left: 35px; top: 0px; position: relative;"><</button>
+					<ul id="new-list" class="related-list" style="margin-left: 80px; margin-top: 20px;">
+						<li></li>
+						<?php foreach ($books as $r) { ?>
+						<li class="span3" style="margin-left: 30px; margin-right: 30px; margin-bottom: 10px; line-height: 9px;">
+								<img src="<?php echo base_url(); ?><?php echo $r['cover_img_front'];?>" width="170" height="247">
+								<p style="margin-top: 10px;"><?php echo $r['book_name'];?></p>
+								<p>฿ <?php echo $r['price'];?></p>
+								<button class="btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
+						</li>
+						<?php } ?>
+						<li></li>
+					</ul>
+					<button id="new-next" class="next-button btn btn-warning" style="float: right; right: 10px; top: 0px; position: relative;">></button>
+				</div>
 			</div><!--/span-->
 		</div><!--/row-->
 
 	</div>
 
-	<div class="section">
-		<div class="section-inner">
-			<div class="related">
-				<div class="related-item">
-					<button class="prev-button">prev</button>	
-					<ul class="related-list">
-						<?php
-						for ($i=0; $i <= 11; $i++) { 
-						?>
-						<li>
-							<div class="span4">
-								<h2>Book <?php echo $i; ?></h2>
-								<p>
-									test test test
-								</p>
-								<button type="button" onclick="change_hero(<?php echo $i; ?>)">test</button>
-							</div>
-						</li>
-						<?php } ?>
-					</ul>	
-					<button class="next-button">next</button>	
-				</div>
-			</div>	
-		</div>
-	</div>
+</div>

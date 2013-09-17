@@ -18,19 +18,38 @@ class Books extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('db_query');
+		$this->load->model('books_model');
+	}
+
 	public function index() {
 		
 		if (!$this->ion_auth->logged_in()) {
 			$this->load->view('templates/header');
-			$this->load->view('books');
-			$this->load->view('templates/footer');
 		}
 		
 		else {
 			$this->load->view('templates/header_logged_in');
-			$this->load->view('books');
-			$this->load->view('templates/footer');
+			
 		}
+
+		// $data['books'] = $this->db_query->get_books_db();
+		// $test['new'] = $this->books_model->get_books_type(1);
+		// $data['recommended'] = $this->books_model->get_books_type(2);
+		// $data['normal'] = $this->books_model->get_books_type(3);
+
+		$data = array(
+			'books' => $this->db_query->get_books_db(),
+			'new' => $this->books_model->get_books_type(1),
+			'recommended' => $this->books_model->get_books_type(2),
+			'normal' => $this->books_model->get_books_type(3)
+			);
+
+		$this->load->view('books', $data);
+		$this->load->view('templates/footer');
 
 	}
 }

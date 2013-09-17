@@ -15,76 +15,6 @@
 
 	}
 
-	#content{
-		padding-top: 30px;
-		-webkit-box-shadow: inset 0px 0px 20px 15px rgba(0, 0, 0, 0.5);
-		box-shadow: inset 0px 0px 20px 25px rgba(0, 0, 0, 0.5);
-		background-image: url(../img/blackboard.jpeg);
-		min-height: 800px;
-		 
-  
-  	 	/*overflow-y: auto;*/
-
-  	 	border-top: solid 7px #F2CD33;
-    /*background:#fff;*/
-	}
-	
-
-
- 	#info{
- 		padding-top: 30px;
-		-webkit-box-shadow: inset 0px 0px 20px 15px rgba(0, 0, 0, 0.5);
-		box-shadow: inset 0px 0px 20px 25px rgba(0, 0, 0, 0.5);
-		background-image: url(../img/blackboard.jpeg);
-		min-height: 1000px;
-
- 	}
-
-
-
-	#titleWord{
-		font-family:'ac_espressa'; 
-		font-size:70px; 
-		color:#F8AC93;"
-
-		text-shadow: 2px 2px 2px #dbd9ba;
-        /*filter: dropshadow(color=#dbd9ba, offx=2, offy=2);*/
-	}
-
-	#Word{
-		padding-top: 30px;
-		font-family:'ac_espressa'; 
-		font-size:60px; 
-		color:#B4D6A4;"
-	}
-
-	#contentWord{
-		font-family:'arabica';
-		font-weight: 200; 
-		font-size:31px; 
-		color:#F8F7E5; 
-		line-height:140%; 
-		padding-left:80px; 
-		padding-right:80px;
-	}
-
-	#endWord{
-		 font-family:'arabica'; 
-		 padding-left: 30px;
-		 padding-right: 30px;
-		 font-size:37px; 
-		 color:#E3E5C3; 
-		 line-height:120%;"
-	}
-
-
-	#endWord2{
-		 font-family:'arabica'; 
-		 font-size:24px; 
-		 color:#E3E5C3; 
-		 line-height:200%;"
-	}
-
 	/* MENU NAVBAR */
 
 	#forgot-password:hover {
@@ -328,7 +258,7 @@
 	}
 
 	.related-item {
-		display: inline;
+		display: inline-flex;
 	}
 
 	.related-list {
@@ -342,7 +272,8 @@
 	.related-list > li > div {
 		/*height: 150px;*/
 		/*width: 150px;*/
-		background-color: red;
+		/*background-color: red;*/
+		/*margin-left: -50px;*/
 	}
 
 	.hero-unit > ul > li {
@@ -355,4 +286,22 @@
 
 	.hero-div {
 		/*height: 250px;	*/
+		margin-top: -30px;
+		margin-left: -80px;
+		margin-bottom: -37px;
+	}
+
+	.prev-button {
+		margin-top: 160px;
+		/*margin-bottom: 130px;*/
+	}
+
+	.next-button {
+		margin-top: 110px;
+		/*margin-bottom: 130px;*/
+	}
+
+	.myrow {
+		display: block;
+		*zoom: 1;
 	}
