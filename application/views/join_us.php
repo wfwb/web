@@ -1,4 +1,4 @@
-	<div class="section" style="background: #FFFFFF; color: #231F20; margin-top: 50px;">
+	<div id="join-us-section" class="section" style="background: #FFFFFF; color: #231F20;">
 		<?php 
 			$i = 1;
 			foreach ($join_us as $thumbnail) { 
@@ -13,6 +13,7 @@
 				</div>
 				<button class="btn btn-small btn-warning">อ่านต่อ ...</button>
 			</div>
+			<hr style="margin-bottom: 5px;">
 		<?php 
 			$i++;
 		} ?>

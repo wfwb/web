@@ -13,9 +13,9 @@
 			<li data-target="#wfwb-carousel" data-slide-to="1"></li>
 		</ol>	
 		
-		<div class="carousel-inner">
+		<div class="carousel-inner" style="border-radius: 10px;">
 			<div class="active item">
-				<img src="<?php echo base_url()?>assets/img/ex-carousel-1.jpg">	
+				<img src="<?php echo base_url()?>assets/img/rose.jpg">	
 			</div>
 			<div class="item">
 				<img src="<?php echo base_url()?>assets/img/ex-carousel-2.jpg">	

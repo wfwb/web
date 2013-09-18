@@ -59,8 +59,50 @@
 		border-radius: 0px;
 	}
 
+	#join-us-section {
+		margin-top: 0px;
+		margin-bottom: 19px;
+	}
+
 	.section-inner {
 		padding: 20px;
+	}
+
+	.custom-thumbnail {
+		padding-bottom: 10px;
+		height: auto;
+	}
+
+	.custom-thumbnail button {
+		position: absolute;
+		right: 35px;
+		bottom: 0px;
+	}
+
+	.thumbnail-img {
+		margin-top: 0px;
+		text-align: center;
+		display: block;
+	}
+
+	.thumbnail-img img {
+		margin-top: 35px;
+	}
+
+	.thumbnail-detail {
+		margin-top: 0px;
+		margin-left: 25px;
+		margin-right: 35px;
+		margin-bottom: 25px;
+		height: auto;
+		position: relative;
+		/*display: block;*/
+		text-align: justify;
+	}
+
+	.thumbnail-detail p {
+		height: auto;
+		max-height: 150px;
 	}
 
 	.footer {
