@@ -61,17 +61,25 @@ class Books_model extends CI_Model {
 
 	public function delete_book() {
 
-		$query = "DELETE FROM wfwb.books WHERE id=".$this->input->post('id');
+		$query = "DELETE FROM books WHERE id=".$this->input->post('id');
 		return $this->db->query($query);
 			
 	}
 
 	public function get_books_type($type) {
 
-		$query = "SELECT * FROM wfwb.books WHERE type=".$type;
+		$query = "SELECT * FROM books WHERE type=".$type;
 		$q = $this->db->query($query);
 		return $q->result_array();
 		
+	}
+
+	public function find_book() {
+
+		$query = "SELECT * FROM books WHERE id=".$this->input->post('id');
+		$q = $this->db->query($query);
+		return $q->result_array();
+
 	}
 
 }

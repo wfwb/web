@@ -73,6 +73,10 @@
 			$('.hero-list > li:gt('+$random+')').hide();
 			$('.hero-list > li:lt('+$random+')').hide();
 
+			$('.btn-to-hero').click(function() {
+				$.scrollTo('#books-container', 800, {easing:'swing'} );
+			});
+
 		});
 
 		function change_hero(index) {
@@ -99,7 +103,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="span10">
+			<div id="top" class="span10">
 				<div class="hero-unit" style="background-color: white;">
 					<ul class="hero-list">
 						<li></li>
@@ -107,17 +111,35 @@
 						<li>
 							<div class="hero-div">
 								<div class="row-fluid">
-									<div class="span3">
-										<img src="<?php echo base_url()?><?php echo $book['cover_img_front']; ?>" height="275" width="190">
+									<div class="span5">
+										<img src="<?php echo base_url()?><?php echo $book['cover_img_front']; ?>">
 									</div>
 									<div class="span7" style="padding-left: 20px;">
 										<h1 style="margin-bottom: 13px; font-size: 50px;"><?php echo $book['book_name']; ?></h1>
-										<p><?php echo $book['book_name_decor']; ?></p>
+										<h4><?php echo $book['book_name_decor']; ?></h4>
+										<?php if($book['series'] != null) { ?>
+											<p>นวนินยายชุด "<?php echo $book['series'];?>"</p>
+										<?php } ?>
 										<p>ผู้เขียน : <?php echo $book['author']; ?></p>
 										<p>ประเภท​ : <?php echo $book['category']; ?></p>
+										<p>ISBN : <?php echo $book['ISBN'];?></p>
+										<p>พิมพ์ครั้งที่ 1 : <?php echo $book['publish'];?></p>
+										<p>ปกและเนื้อใน : <?php echo $book['cover_inside'];?></p>
+										<p>จำนวนหน้า : <?php echo $book['total_pages'];?> หน้า</p>
 										<p>ราคา : <?php echo $book['price']; ?> บาท</p>
-										<!-- <p>ISBN : <?php echo $book['ISBN']; ?></p> -->
-										<p><a href="#" class="btn btn-primary btn-medium">Learn more »</a></p>
+										<p>ส่วนลด : <?php echo $book['discount'];?>% เหลือ <?php echo ((100-$book['discount'])/100)*$book['price'];?> บาท</p>
+										<div style="display: inline;">
+										<?php echo form_open(); ?>
+											<p style="display: none;"><input name="id" value="<?php echo $book['id']; ?>"></input></p>
+											<p style="float: left; margin-right: 10px;">จำนวน</p>
+											<input type="text" value="1" style="float:left; margin-right: 10px; width: 30px;"></input>
+											<p><button type="submit" class="btn btn-inverse btn-medium" style="float:left; margin-right: 10px;">ใส่ตะกร้า</button></p>
+										<?php echo form_close(); ?>
+										<?php echo form_open('books/book'); ?>
+										<p style="display: none;"><input name="id" value="<?php echo $book['id']; ?>"></input></p>
+										<p><button type="submit" class="btn btn-warning btn-medium" style="float:left;">ดูรายละเอียด</button></p>
+										<?php echo form_close(); ?>
+										</div>
 									</div>	
 								</div>
 							</div>	
@@ -140,7 +162,7 @@
 								<img src="<?php echo base_url(); ?><?php echo $r['cover_img_front'];?>" width="170" height="247">
 								<p style="margin-top: 10px;"><?php echo $r['book_name'];?></p>
 								<p>฿ <?php echo $r['price'];?></p>
-								<button class="btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
+								<button class="btn-to-hero btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
 						</li>
 						<?php } ?>
 						<li></li>
@@ -161,7 +183,7 @@
 								<img src="<?php echo base_url(); ?><?php echo $r['cover_img_front'];?>" width="170" height="247">
 								<p style="margin-top: 10px;"><?php echo $r['book_name'];?></p>
 								<p>฿ <?php echo $r['price'];?></p>
-								<button class="btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
+								<button class="btn-to-hero btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
 						</li>
 						<?php } ?>
 						<li></li>
@@ -182,7 +204,7 @@
 								<img src="<?php echo base_url(); ?><?php echo $r['cover_img_front'];?>" width="170" height="247">
 								<p style="margin-top: 10px;"><?php echo $r['book_name'];?></p>
 								<p>฿ <?php echo $r['price'];?></p>
-								<button class="btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
+								<button class="btn-to-hero btn btn-warning" type="button" onclick="change_hero(<?php echo $r['id']; ?>)">ดูรายละเอียด</button>
 						</li>
 						<?php } ?>
 						<li></li>

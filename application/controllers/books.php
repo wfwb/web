@@ -52,6 +52,23 @@ class Books extends CI_Controller {
 		$this->load->view('templates/footer');
 
 	}
+
+	public function book() {
+
+		if (!$this->ion_auth->logged_in()) {
+			$this->load->view('templates/header');
+		}
+		
+		else {
+			$this->load->view('templates/header_logged_in');	
+		}
+
+		$data['book'] = $this->books_model->find_book();
+
+		$this->load->view('book', $data);
+		$this->load->view('templates/footer');
+
+	}
 }
 
 /* End of file welcome.php */

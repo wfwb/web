@@ -1,6 +1,6 @@
 	
 	body {
-		background-image: url(../img/wood-bg.jpg);
+		background-image: url(../img/book-bg.png);
 	}
 
 	#page {
@@ -138,7 +138,7 @@
 
 	.section {
 		height: auto;
-		background: rgba(256, 256, 256, 0.95);
+		background: rgba(256, 256, 256, 1);
 	}
 
 	.section-inner {
@@ -250,6 +250,8 @@
 		background-color: white;
 		padding-top: 25px;
 		padding-bottom: 25px;
+		border-radius: 10px;
+		/*border: solid 7px #F2CD33;*/
 	}
 
 	/* */
@@ -304,4 +306,23 @@
 	.myrow {
 		display: block;
 		*zoom: 1;
+	}
+
+	.book-description {
+		line-height: 30px;
+	}
+
+	.book-description h1 {
+		line-height: 30px;
+		font-size: 50px;
+	}
+
+	.book-description h4 {
+		line-height: 30px;
+		font-size: 20px;
+	}
+
+	.book-description p {
+		line-height: 30px;
+		font-size: 18px;
 	}

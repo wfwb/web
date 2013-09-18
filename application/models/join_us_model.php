@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Join_us extends CI_Model {
+class Join_us_model extends CI_Model {
 	
 	public function add_join_us() {
 

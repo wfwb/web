@@ -22,7 +22,7 @@ class Join_Us extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('db_query');
-		$this->load->model('join_us');
+		$this->load->model('join_us_model');
 	}
 
 	public function index() {
