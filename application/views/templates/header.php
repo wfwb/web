@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/wfwb.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/wfwb-responsive.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/dropdown.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/register.css">
+	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/register.css"> -->
 
 	<script type="text/javascript" src="<?php echo base_url()?>assets/js/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.scrollTo-1.4.3.1-min.js"></script>
@@ -42,55 +42,6 @@
 
 	</script>
 
-		<style type="text/css">
-	
-	@font-face {
-			    font-family: 'thai_sans_lite';
-			    src: url('<?php echo base_url();?>fonts/thaisan/thaisanslite_r1-webfont.eot');
-			    src: url('<?php echo base_url();?>fonts/thaisan/thaisanslite_r1-webfont.woff') format('woff'),
-			         url('<?php echo base_url();?>fonts/thaisan/thaisanslite_r1-webfont.ttf') format('truetype'),
-			         url('<?php echo base_url();?>fonts/thaisan/thaisanslite_r1-webfont.svg#thai_sans_literegular') format('svg');
-			    font-weight: normal;
-			    font-style: normal;
-
-	}
-
-
-	@font-face {
-	    font-family: 'ac_espressa';
-	    src: url('<?php echo base_url();?>fonts/ac_espressa-webfont.eot');
-	    src: url('<?php echo base_url();?>fonts/ac_espressa-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('<?php echo base_url();?>fonts/ac_espressa-webfont.woff') format('woff'),
-	         url('<?php echo base_url();?>fonts/ac_espressa-webfont.ttf') format('truetype');
-	    font-weight: normal;
-	    font-style: normal;
-
-	}
-
-	@font-face {
-    font-family: 'layiji_ruduuron';
-    src: url('<?php echo base_url();?>fonts/layiji_ruduuron-webfont.eot');
-    src: url('<?php echo base_url();?>fonts/layiji_ruduuron-webfont.eot?#iefix') format('embedded-opentype'),
-         url('<?php echo base_url();?>fonts/layiji_ruduuron-webfont.woff') format('woff'),
-         url('<?php echo base_url();?>fonts/layiji_ruduuron-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-	}
-
-	@font-face {
-    font-family: 'arabica';
-    src: url('<?php echo base_url();?>fonts/arabica-webfont.eot');
-    src: url('<?php echo base_url();?>fonts/arabica-webfont.eot?#iefix') format('embedded-opentype'),
-         url('<?php echo base_url();?>fonts/arabica-webfont.woff') format('woff'),
-         url('<?php echo base_url();?>fonts/arabica-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-	</style>
-
 </head>
 
 <body>
@@ -98,7 +49,7 @@
 <div id="page">
 	
 		<div id="head">
-			<img class="logo hidden-phone" src="<?php echo base_url()?>assets/img/logo-shadow.png">
+			<img class="logo hidden-phone" src="<?php echo base_url()?>assets/img/logo-color.png">
 			<!-- <div class="navbar navbar-inverse visible-desktop">
 				<div id="wfwbnav" class="navbar-inner">
 					<button id="expander" type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">

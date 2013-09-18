@@ -1,5 +1,5 @@
 
-	<div class="section" style="margin-top: 50px;">
+	<div id="book-secition" class="section">
 		<div class="section-inner">
 			<?php foreach ($book as $b) { ?>
 			<div class="row-fluid" style="margin-top: 20px; margin-bottom: 50px;">

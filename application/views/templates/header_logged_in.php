@@ -138,6 +138,9 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">ข้อมูลส่วนตัว</a>
 							<ul class="dropdown-menu" style="padding-left: 15px; padding-right: 15px; padding-top: 15px">
 								<li><h4>ข้อมูลส่วนตัว</h3></li>
+								<?php echo form_open("home/profile");?>
+									<button type="submit" id="btnLogin" class="btn btn-inverse" style="margin-top:5px;">ดูข้อมูลส่วนตัว</button>
+								<?php echo form_close();?>
 								<?php echo form_open("auth/logout");?>
 									<button type="submit" id="btnLogin" class="btn btn-warning" style="margin-top:5px;">ออกจากระบบ</button>
 								<?php echo form_close();?>

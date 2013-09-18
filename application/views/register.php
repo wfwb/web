@@ -1,64 +1,49 @@
+	
+	<div id="register-section" class="section">
+		<div class="section-inner">
 
-<div id="info"> 
+			<h1>สมัครสมาชิก</h1>
 
-      <p id="regis">สมัครสมาชิก</p>
+			<?php echo form_open('auth/create_user'); ?>
 
-        <?php echo form_open('auth/create_user'); ?>
-            <div class = "row" style="margin-left:200px; margin-bottom:10px;">
+			<div class = "row-custom" style="margin-left:200px;">
+				<p style=" margin-top: 20px;">
+					<?php echo form_error("first_name","<font size=5px; class='font_error' color='error'>","</font>");?></br>
+					<!-- <label class="row-label" for="first_name" style="margin-right:10px;">ชื่อ : </label> -->
+					<input placeholder="ชื่อ" type="text" name="first_name" value="" id="first_name"  size="40"/>
+				</p>
 
+				<p> 
+					<?php echo form_error("last_name","<font size=5px; class='font_error' color='error'>","</font>");?></br>
+					<!-- <label class="row-label" for="first_name" style="margin-right:10px;">นามสกุล : </label>  -->
+					<input placeholder="นามสกุล" type="text" name="last_name" value="" id="last_name"  size="40"/>
+				</p>
+				<p>
+					<?php echo form_error("email","<font size=5px; class='font_error' color='error'>","</font>");?></br>
+					<!-- <label class="row-label" for="email" style="margin-right:63px;">อีเมล์ : </label> -->
+					<input placeholder="อีเมล" type="email" name="email" value="" id="email"  size="40"/>
+				</p>
 
-              <p style="margin-right:30px;">
-                  <?php echo form_error("first_name","<font size=5px; class='font_error' color='error'>","</font>");?></br>
-                  <label for="first_name" style="margin-right:10px;">First Name:</label>
-                  <input type="text" name="first_name" value="" id="first_name"  />      </p>
-
-                  <p>  <?php echo form_error("last_name","<font size=5px; class='font_error' color='error'>","</font>");?></br>
-                  <label for="first_name" style="margin-right:10px;">Last Name:</label> 
-                  <input type="text" name="last_name" value="" id="last_name"  />      </p>
-
-            </div>
-
-             
-            <div class = "row" style="margin-left:200px; margin-bottom:10px;">
-              <p style="margin-right:30px;">  <?php echo form_error("email","<font size=5px; class='font_error' color='error'>","</font>");?></br>
-                  <label for="email" style="margin-right:63px;">Email:</label>
-                  <input type="text" name="email" value="" id="email"  />      </p>
-
-                   <p>  <?php echo form_error("phone","<font size=5px; class='font_error' color='error'>","</font>");?></br>
-                   <label for="phone" style="margin-right:55px;">Phone:</label> 
-                  <input type="text" name="phone" value="" id="phone"  />      </p>
-
-             </div>
-
-            
-
-            <div class = "row" style="margin-left:200px;">
-
-              <p>  <?php echo form_error("password","<font size=5px; class='font_error' color='error'>","</font>");?></br>
-                  <label for="password" style="margin-right:30px;">Password:</label> 
-                  <input type="password" name="password" value="" id="password"  />      </p>
-
-            </div>
-            <div class = "row" style="margin-left:200px;">
-
-              <p> <?php echo form_error("password_confirm","<font size=5px; class='font_error' color='error'>","</font>");?></br>
-                  <label for="password_confirm" style="margin-right:30px;">Confirm Password:</label> 
-                  <input type="password" name="password_confirm" value="" id="password_confirm"  />      </p>
-
-             </div>
-
-           
-          
- 
-          
-             <button type="submit" class="btn" id="submit" >Submit</button>
-             <button  type="reset" class="btn" id="reset" >Reset</button>
-         
-
-
-
-        <?php echo form_close(); ?>
-
-
-          <link href="<?php echo base_url() ?>styles/jqModal.css" rel="stylesheet" type="text/css" /> 
+				<p>
+					<?php echo form_error("phone","<font size=5px; class='font_error' color='error'>","</font>");?></br>
+					<!-- <label class="row-label" for="phone" style="margin-right:55px;">โทรศัพท์ : </label>  -->
+					<input placeholder="โทรศัพท์" type="text" name="phone" value="" id="phone"  size="40"/>
+				</p>
+				<p>
+					<?php echo form_error("password","<font size=5px; class='font_error' color='error'>","</font>");?></br>
+					<!-- <label class="row-label" for="password" style="margin-right:30px; float:left;">รหัสผ่าน : </label>  -->
+					<input placeholder="รหัสผ่าน" type="password" name="password" value="" id="password" size="40"/>
+				</p>
+				<p style="margin-bottom: 10px;">
+					<?php echo form_error("password_confirm","<font size=5px; class='font_error' color='error'>","</font>");?></br>
+					<!-- <label class="row-label" for="password_confirm" style="margin-right:30px;">รหัสผ่าน : </label>  -->
+					<input placeholder="ยืนยัน รหัสผ่าน" type="password" name="password_confirm" value="" id="password_confirm"  size="40"/>
+				</p>
+			<p>
+			<button type="submit" class="btn btn-inverse" id="submit" style="margin-right: 7px;">สมัคร</button>
+			<button type="reset" class="btn btn-warning" id="reset">ตั้งค่าเริ่มต้น</button>
+			</p>
+		<?php echo form_close(); ?>
+		</div>
+	</div>
 </div>

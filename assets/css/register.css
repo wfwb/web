@@ -1,4 +1,4 @@
-
+/*
  #info{
  	min-height: 550px;
  }
@@ -29,7 +29,7 @@
 	#regis{
 	
 		line-height: 40px;
-		 /*font-family: Oswald,Arial,Helvetica,sans-serif !important;*/
+		 font-family: Oswald,Arial,Helvetica,sans-serif !important;
 		font-size: 80px;
 		color: #D9364A;
 		font-style: bold;
@@ -57,3 +57,4 @@
 	margin-left: 20px;
 	width: 100px;
 }
+*/

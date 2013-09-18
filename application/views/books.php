@@ -197,10 +197,10 @@
 				</div>
 				<div class="row">
 					<button id="new-prev" class="prev-button btn btn-inverse" style="float: left; left: 35px; top: 0px; position: relative;"><</button>
-					<ul id="new-list" class="related-list" style="margin-left: 80px; margin-top: 20px;">
+					<ul id="new-list" class="related-list" style="margin-left: 15%; margin-top: 20px;">
 						<li></li>
 						<?php foreach ($books as $r) { ?>
-						<li class="span3" style="margin-left: 30px; margin-right: 30px; margin-bottom: 10px; line-height: 9px;">
+						<li class="span3" style="margin-left: 20px; margin-right: 20px; margin-bottom: 10px; line-height: 9px;">
 								<img src="<?php echo base_url(); ?><?php echo $r['cover_img_front'];?>" width="170" height="247">
 								<p style="margin-top: 10px;"><?php echo $r['book_name'];?></p>
 								<p>฿ <?php echo $r['price'];?></p>
