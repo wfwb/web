@@ -46,7 +46,7 @@ $route['news'] = "news";
 $route['join_us'] = "join_us";
 $route['contact_us'] = "contact_us";
 
-/* ADMIN */
+// /* ADMIN */
 $route['admin'] = "admin";
 $route['admin_home_page'] = "admin/home_page";
 $route['admin_books_page'] = "admin/books_page";
