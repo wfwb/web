@@ -118,6 +118,11 @@
 
 	.carousel-inner img {
 		border-radius: 10px;
+		
+	}
+
+	.carousel-inner div {
+		height: 350px;
 	}
 
 	#contact-us-section {
