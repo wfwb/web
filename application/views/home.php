@@ -22,11 +22,11 @@
 
 
 		@font-face {
-			font-family: 'ac_espressa';
-			src: url('<?php echo base_url();?>fonts/ac_espressa-webfont.eot');
-			src: url('<?php echo base_url();?>fonts/ac_espressa-webfont.eot?#iefix') format('embedded-opentype'),
-			url('<?php echo base_url();?>fonts/ac_espressa-webfont.woff') format('woff'),
-			url('<?php echo base_url();?>fonts/ac_espressa-webfont.ttf') format('truetype');
+			font-family: 'thsarabun';
+			src: url('<?php echo base_url();?>fonts/thsarabunnew-webfont.eot');
+			src: url('<?php echo base_url();?>fonts/thsarabunnew-webfont.eot?#iefix') format('embedded-opentype'),
+			url('<?php echo base_url();?>fonts/thsarabunnew-webfont.woff') format('woff'),
+			url('<?php echo base_url();?>fonts/thsarabunnew-webfont.ttf') format('truetype');
 			font-weight: normal;
 			font-style: normal;
 
@@ -65,7 +65,7 @@
 		
 		<div class="carousel-inner" style="border-radius: 10px;">
 			<div class="active item">
-				<img src="<?php echo base_url()?>assets/img/rose.jpg">	
+				<img src="<?php echo base_url()?>assets/img/sh.png">	
 			</div>
 			<div class="item">
 				<img src="<?php echo base_url()?>assets/img/ex-carousel-2.jpg">	
@@ -84,7 +84,7 @@
 
 		<div class="carousel-inner hidden-desktop">
 			<div class="active item">
-				<img src="<?php echo base_url()?>assets/img/ex-carousel-1.jpg" style="height: 100%;">	
+				<img src="<?php echo base_url()?>assets/img/ex-carousel-2.jpg" style="height: 100%;">	
 			</div>
 			<div class="item">
 				<img src="<?php echo base_url()?>assets/img/ex-carousel-2.jpg" style="height: 100%">	
@@ -100,16 +100,16 @@
 	<div id="content" style="overflow-y: auto;">
 
 		<p class="center" id="titleWord"> คำต่อคำ </p>
-		<p class="center" id="Word"> ต่อเติมความหมายในใจคนอ่าน </p>
+		<p class="center" id="Word"> ต่อเติมความหมายในใจคนอ่าน </p> </br></br>
 		<p class="center" id="contentWord"> เมื่อนำ "คำ" มาต่อ "คำ" ไม่เพียงก่อให้เกิดคำใหม่ หากยังเรียงร้อยเป็นประโยค ถ่ายทอดเรื่องราวนานา 
 มากไปกว่านั้น เมื่อ "คำ" ต่อ "คำ" ยังสร้าง “ความ” อันมากมายหลากหลาย 
 ทั้งความรัก ความสุข ความดีงาม ความกล้า และอีกนานัป 
 “ความ” ซึ่งสัมผัสใจคน กระตุ้นให้กล้า ให้ก้าวไปบนเส้นทางสายใหม่ที่อาจไม่เคยเห็น 
 จุดประกายไฟฝันที่มอดดับให้คุโชน ต่อเติมวันเวลามิให้ว่างเปล่า เติมใจจนเต็ม 
-แม้แต่ตั้งคำถามกับการดำรงอยู่ของชีวิตและสั่นคลอนศรัทธาความเชื่อเดิมๆ  </p>
+แม้แต่ตั้งคำถามกับการดำรงอยู่ของชีวิตและสั่นคลอนศรัทธาความเชื่อเดิมๆ  </p> </br>
 		<p class="center" id="endWord" > นี่คือการร่วมงานกันของเพื่อนสองคน 
 บรรณาธิการและนักเขียนผู้ทำงานกับ “คำ” มาตลอดชีวิต 
-นี่คือ สำนักพิมพ์คำต่อคำ </p>
+นี่คือ สำนักพิมพ์คำต่อคำ </p> 
 
 	<p class="center" id="endWord2" > ก่อตั้ง : 20 ธันวาคม 2555 
 		ผู้ร่วมก่อตั้ง : บรรณาธิการชื่อ “บ.ก. แว่น” และนักเขียนชื่อ “ดวงตะวัน” ประเภทหนังสือ : นวนิยาย ฯลฯ

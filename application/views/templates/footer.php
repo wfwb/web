@@ -2,7 +2,7 @@
 	<div class="visible-desktop">
 		<div class="contact-us">
 			<a href="http://www.facebook.com/wordforwordbooks" target="_blank"><img src="<?php echo base_url()?>assets/img/fb-logo.png" width="50" height="50" style="margin-top: 10px; margin-bottom: 30px; cursor: pointer;"></a>
-			<p>ติดตามข่าวสาร สำนักพิมพ์คำต่อคำ&nbsp&nbsp<i class="icon-envelope icon-white"></i></p>
+			<p>สมัครรับข่าวสารสํานักพิมพ์คําต่อคํา&nbsp&nbsp<i class="icon-envelope icon-white"></i></p>
 			<form class="form-inline">
 				<div class="input-append">
 					<input type="text" class="form-control" style="width: 190px;" placeholder="อีเมล">

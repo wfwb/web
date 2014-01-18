@@ -9,8 +9,8 @@
   
   	 	/*overflow-y: auto;*/
 
-    /*background:#fff;*/
-    	margin-top: 30px;
+    /*background-color:#F8F8F8;*/
+    	/*margin-top: 30px;*/
     	margin-bottom: 30px;
     	padding-top: 30px;
     	padding-bottom: 30px;
@@ -20,12 +20,14 @@
 
 
  	#info{
- 		/*padding-top: 30px;*/
- 		/*margin-top: 30px;*/
+ 		 padding-top: 30px;
+ 		margin-top: 10px;
 		/*-webkit-box-shadow: inset 0px 0px 20px 15px rgba(0, 0, 0, 0.5);*/
 		/*box-shadow: inset 0px 0px 20px 25px rgba(0, 0, 0, 0.5);*/
-		background-image: url(../img/blackboard.jpeg);
-    	border-radius: 10px;
+		/*background-image: url(../img/blackboard.jpeg);*/
+		 background-color: rgba(255, 255, 255, 1);
+    	/*border-radius: 10px ;*/
+    	/*border: solid 7px #F2CD33;*/
 
 		/*min-height: 1000px;*/
 
@@ -34,80 +36,98 @@
 
 
 	#titleWord{
-		font-family:'ac_espressa'; 
-		font-size:70px; 
-		color:#F8AC93;"
-
+		font-family:'thsarabun'; 
+		font-size:50px; 
+		color:#FF2968;
+		/*margin-top: 35px;*/
 		text-shadow: 2px 2px 2px #dbd9ba;
+		/*float: right;;*/
+		padding-left: 20px;
+		display: inline;
         /*filter: dropshadow(color=#dbd9ba, offx=2, offy=2);*/
 	}
 
 	#Word{
-		padding-top: 30px;
-		font-family:'ac_espressa'; 
-		font-size:60px; 
-		color:#B4D6A4;"
+		/*margin-top: 30px;*/
+		font-family:'thsarabun'; 
+		font-size:30px; 
+		display: inline;
+		color:#5794BD;"
 	}
 
 	#contentWord{
-		font-family:'arabica';
+		font-family:'thsarabun';
 		font-weight: 200; 
-		font-size:31px; 
-		color:#F8F7E5; 
+		font-size:17px; 
+		/*color:#F8F7E5; */
 		line-height:140%; 
 		padding-left:80px; 
 		padding-right:80px;
 	}
 
 	#endWord{
-		 font-family:'arabica'; 
+		 font-family:'thsarabun'; 
 		 padding-left: 30px;
-		 padding-right: 30px;
-		 font-size:37px; 
-		 color:#E3E5C3; 
-		 line-height:120%;"
+		 padding-right: 20px;
+		 font-size:13px; 
+		 float: right;
+		 /*color:#E3E5C3; */
+		 /*line-height:120%;"*/
 	}
 
 
 	#endWord2{
-		 font-family:'arabica'; 
-		 font-size:24px; 
-		 color:#E3E5C3; 
-		 line-height:200%;"
+		 font-family:'thsarabun'; 
+		 font-size:13px; 
+		 /*color:#E3E5C3; */
+		 /*line-height:250%;*/
+		 float: right;
+		 padding-right: 20px;
+
 	}
 
 	body {
-		background-image: url(../img/book-bg.png);
-		/*font-family: 'thai_sans_lite';*/
+		/*background-image: url(../img/dark_wood/dark_wood.png);*/
+		/*background: url("../img/tileable_wood_texture.png");*/
+		/*background: url("../img/purty_wood.png") repeat scroll 0 0 #FCFCF9;*/
+		background-color: #FFFFFF; 
+		font-family: 'thsarabun';
 	}
 
 	#page {
 		width: 1100px;
-		margin-top: 130px;
+		margin-top: 100px;
 		margin-left: auto;
 		margin-right: auto;
+
+		/*padding-top: 10px;*/
+		padding-left: 15px;
+		padding-right: 15px;
+		/*background-color: rgba(255, 255, 255, 0.85);*/
 		/*margin-bottom: 60px;*/
-
-/*
-	-moz-box-shadow:    inset 0 0 10px #FF0000;
-	-webkit-box-shadow: inset 0 0 10px #FF0000;
-	box-shadow:         inset 0 0 10px #000000;
-*/
+		 background-color: #F0F0EB; 
 
 
+	/*-moz-box-shadow:    outset 0 0 10px #FF0000;
+	-webkit-box-shadow: outset 0 0 10px #FF0000;
+	box-shadow:         outset 0 0 10px #000000;*/
 
-	/*-webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.9);
-	-moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.9);
-	-webkit-border-radius:20px;
-	-moz-border-radius:20px; 
-	border-bottom:19px solid #D18A43;
-	border-left:19px solid #D18A43;
-	border-right:19px solid #D18A43;*/
+
+
+
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.05);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px; 
+	/*border-bottom:19px solid #D18A43;*/
+	/*border-left:19px solid #D18A43;*/
+	/*border-right:19px solid #D18A43;*/
 
 	}
 
 
 	#head {
+		/*padding-top: 70px;*/
 
 	}
 
@@ -130,26 +150,32 @@
 	}
 
 	.navbar-custom {
-		background: #221E20;
+		/*margin-top: 30px;*/
+		background: #FFFFFA;
+		width: 1117px;
 		height: 70px;
 		border-radius: 10px;
-		border-bottom: solid 7px #F2CD33;
+		border-top: solid 4px #FFD55E;
+		border-bottom: solid 4px #FFD55E;
+		/*border-right: solid 4px #F2CD33;*/
+
 	}
 
 	.navbar-custom ul {
+
 		list-style:none;
 	}
 
 	.navbar-custom > ul > li {
 		float: right;
 		padding:25px 30px 0 0;
-		margin:0;
+	
 	}
 
 	.navbar-custom > ul> li > a {
-		font-size: 16px;
-		color: #FFFFFF;
-		text-decoration: none;
+		font-size: 17px;
+		color: #000000;
+		/*font-weight:bold;*/
 	}
 
 	.navbar-custom > ul> li > a:hover {
@@ -158,8 +184,9 @@
 	}
 
 	.logo {
-		width: 157px;
-		height: 181px;
+		margin-left: -30px;
+		width: 147px;
+		height: 171px;
 		position: absolute;
 		margin-top: -80px;
 		z-index: 3;
@@ -193,7 +220,7 @@
 	/* CAROUSEL */
 
 	#wfwb-carousel {
-		margin-top: 50px;
+		margin-top: 20px;
 		margin-bottom: 0px;
 
 		/*border-bottom: solid 7px #66BCDA;*/
@@ -218,7 +245,7 @@
 	}
 
 	.carousel-inner img {
-		border-radius: 10px;
+		/*border-radius: 10px;*/
 		
 	}
 

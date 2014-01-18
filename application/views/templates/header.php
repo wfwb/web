@@ -59,7 +59,7 @@
 					</button>
 					<div class="nav-collapse">
 						<ul id="wfwbul" class="wfwbmenu nav pull-right">
-							<li><a id="home-li" href="">แรกพบ</a></li>
+							<li><a id="home-li" href="">หน้าบ้าน</a></li>
 							<li><a id="books-li" href="">ชวนอ่านหนังสือ</a></li>
 							<li><a id="news-li" href="">แจ้งข่าว</a></li>
 							<li><a id="webboard-li" href="">พบปะพูดคุย</a></li>
@@ -117,7 +117,7 @@
 					<li><a id="webboard-li" href="http://forum.wordforwordbooks.com" target="_blank">พบปะพูดคุย</a></li>
 					<li><a id="news-li" href="<?php echo base_url()?>news">แจ้งข่าว</a></li>
 					<li><a id="books-li" href="<?php echo base_url()?>books">ชวนอ่านหนังสือ</a></li>
-					<li><a id="home-li" href="<?php echo base_url()?>">แรกพบ</a></li>
+					<li><a id="home-li" href="<?php echo base_url()?>">หน้าบ้าน</a></li>
 					
 				</ul>
 
@@ -169,7 +169,7 @@
 					<li id="brand-text" style="float: left"><a href="">คำต่อคำ</a></li>
 					<li class="menu-toggle"><a href="#" style="margin-left: 15px;"><i class="icon-th-list icon-white" style="margin-top: 3px;"></i>&nbsp&nbspเมนู</a></li>
 					<ul class="menu-vertical">
-						<li><a id="home-li" href="<?php echo base_url()?>">แรกพบ</a></li>
+						<li><a id="home-li" href="<?php echo base_url()?>">หน้าบ้าน</a></li>
 						<li><a id="books-li" href="<?php echo base_url()?>books">ชวนอ่านหนังสือ</a></li>
 						<li><a id="news-li" href="<?php echo base_url()?>news">แจ้งข่าว</a></li>
 						<li><a id="webboard-li" href="http://forum.wordforwordbooks.com" target="_blank">พบปะพูดคุย</a></li>
